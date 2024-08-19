@@ -1,0 +1,14 @@
+GenericEntity : "{4A80A166BEDB75BE}Prefabs/Weapons/Rifles/M16/Rifle_XM15E2S_Shorty.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{6226F3A8A394CDF5}" {
+     AttachmentSlot InventoryStorageSlot Handguard {
+      Prefab "{08286DDBB1F33FF1}Prefabs/Weapons/Attachments/Optics/Optic_AP2k/Collim_AP2k.et"
+     }
+    }
+   }
+  }
+ }
+}

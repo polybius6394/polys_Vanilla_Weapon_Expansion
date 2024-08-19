@@ -1,0 +1,41 @@
+GenericEntity : "{3EB02CDAD5F23C82}Prefabs/Weapons/Rifles/SVD/Rifle_SVD.et" {
+ ID "525494E72B1E90FD"
+ components {
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemDisplayName WeaponUIInfo "{5222CB07CFF6712A}" {
+     Name "Tigr .308"
+     Description " A civilian variant of the SVD first produced in the 1970s. This one is chambered in 7.62x51 NATO."
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    MuzzleComponent "{CA6BE4D6B867541F}" {
+     components {
+      CaseEjectingEffectComponent "{5122AAD190FCA21D}" {
+       ParticleEffect "{6A0F068A792EA37C}Particles/Weapon/Casing_762x51.ptc"
+      }
+     }
+     MagazineWell MagazineWellM14 "{5472D217E30E6BD2}" {
+     }
+     DispersionDiameter 0.029
+     DispersionRange 100
+     UIInfo MuzzleUIInfo "{2FBBA72C906C627E}" {
+      m_MagIndicator SCR_MagazineIndicatorConfiguration "{565ECB55D6F6D63D}" {
+       m_sOutline "magazine-default-outline"
+       m_sBackground "magazine-default-background"
+       m_sProgress "magazine-defaukt-fill"
+       m_sProgressAlphaMask "magazine-default-alpha"
+      }
+     }
+     MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
+      Offset -0.0009 -0.0092 -0.007
+      Angles -2.3513 -0.0027 0.6475
+     }
+     MagazineTemplate "{627255315038152A}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_SpecialBall.et"
+    }
+   }
+  }
+ }
+}

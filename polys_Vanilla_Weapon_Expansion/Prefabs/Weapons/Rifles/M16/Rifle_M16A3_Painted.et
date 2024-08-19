@@ -1,0 +1,42 @@
+GenericEntity : "{9C38B35C2CC96D4B}Prefabs/Weapons/Rifles/M16/Rifle_M16A3.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Materials {
+    MaterialAssignClass "{6226F3A4F6F0B3F6}" {
+     SourceMaterial "M16A2_Barrel_01"
+     AssignedMaterial "{B2FF2E7B4F49CE5A}Assets/Weapons/Rifles/M16A2/Data/M16A2_Barrel_01_OliveGreen_Sand_Stripes.emat"
+    }
+    MaterialAssignClass "{6226F3A4F6F0B3DB}" {
+     SourceMaterial "M16A2_FrontSight_01"
+     AssignedMaterial "{C0957B41983B2D0C}Assets/Weapons/Rifles/M16A2/Data/M16A2_FrontSight_OliveGreen_Sand_Stripes.emat"
+    }
+    MaterialAssignClass "{6226F3A4F6F0B3D2}" {
+     SourceMaterial "M16A2_Grip_01"
+     AssignedMaterial "{A15C93F5CD3202DC}Assets/Weapons/Rifles/M16A2/Data/M16A2_Grip_01_OliveGreen_Sand_Stripes.emat"
+    }
+    MaterialAssignClass "{6226F3A4F6F0B3AA}" {
+     SourceMaterial "M16A2_Receiver1_01"
+     AssignedMaterial "{917FE76FAFB530BB}Assets/Weapons/Rifles/M16A2/Data/M16A2_Receiver1_01_OliveGreen_Sand_Stripes.emat"
+    }
+    MaterialAssignClass "{6226F3A4F6F0B3A0}" {
+     SourceMaterial "M16A2_Receiver2_01"
+     AssignedMaterial "{EAC84340502A1694}Assets/Weapons/Rifles/M16A2/Data/M16A2_Receiver2_01_OliveGreen_Sand_Stripes.emat"
+    }
+    MaterialAssignClass "{6226F3A4F6F0B3BE}" {
+     SourceMaterial "M16A2_Stock_01"
+     AssignedMaterial "{94A6AAA487EC6F61}Assets/Weapons/Rifles/M16A2/Data/M16A2_Stock_01_OliveGreen_Sand_Stripes.emat"
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{56DE9C900611C1AF}" {
+     AttachmentSlot InventoryStorageSlot Handguard {
+      Prefab "{1A2C3098A3F88658}Prefabs/Weapons/Attachments/Handguards/Handguard_M16A2/Handguard_M16_OliveGreen_Sand_Stripes.et"
+     }
+    }
+   }
+  }
+ }
+}

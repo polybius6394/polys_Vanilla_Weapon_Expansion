@@ -1,0 +1,8 @@
+GameProject {
+ ID "polysVanillaWeaponExpansion"
+ GUID "62264496494D0FC8"
+ TITLE "polys_Vanilla_Weapon_Expansion"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}

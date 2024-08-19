@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{EFBB7D45DF411099}Prefabs/Weapons/Rifles/M16/Rifle_XM15E2S_Shorty_poly.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

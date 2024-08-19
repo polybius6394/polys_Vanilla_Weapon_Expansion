@@ -1,0 +1,356 @@
+GenericEntity : "{911D6C8DC7BA2D63}Prefabs/Weapons/Core/Rifle_Base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponSoundComponent "{5A8685198A9AEEDD}" {
+   Filenames {
+    "{62BB0D533080AE8D}Sounds/Weapons/Rifles/VZ-58/Weapons_Rifles_VZ-58_Shot.acp" "{1A15B9A1B0C17E1B}Sounds/Weapons/Rifles/AK-74/Weapons_Rifles_AK-74_Handling.acp" "{68E023371FDD3B12}Sounds/Weapons/_SharedData/Drop/Weapons_Drop_Rifle_WoodMetal.acp" "{A84D9F22F2C0D9CE}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_Rifle_WoodMetal.acp" "{332983CC95EE1E1E}Sounds/Weapons/_SharedData/Melee/Weapons_Melee_Rifle.acp" "{D8F675F3468362E2}Sounds/Weapons/_SharedData/Weapons_Sights_Actions.acp" "{10C1421961C34D26}Sounds/Weapons/_SharedData/Weapons_Deployment.acp" "{E419B2CF55F4A389}Sounds/Weapons/_SharedData/Melee/Weapons_Melee_Bayonett.acp"
+   }
+  }
+  MeshObject "{CFBAA4B701F95D69}" {
+   Object "{EB3FA38F920D4615}Assets/Weapons/Rifles/VZ58/VZ58_body.xob"
+  }
+  RigidBody "{6226F3AB3F51E7EF}" {
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_MeleeWeaponProperties "{6226F3AB3F51E7E6}" {
+   m_fDamage 20
+   m_fRange 1
+  }
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemDisplayName WeaponUIInfo "{5222CB07CFF6712A}" {
+     Name "EVR-76 Sporter"
+     Description "A semi-automatic version of the Sa vz. 58 for civilian use."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6226F3AB3F51E7FB}" {
+     Weight 2.91
+     SizeSetupStrategy Manual
+     ItemDimensions 25 25 25
+     ItemVolume 1500
+     RestingUP Left
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{5284960E1D29F45C}" {
+     AnimationInstance "{0350283642830782}anims/workspaces/player/player_main_rifle.asi"
+     AnimationIKPose "{F85D69227FAA3190}Assets/Weapons/Rifles/VZ58/anims/anm/p_VZ58_ik.anm"
+    }
+    CustomAttributes {
+     AimingModifierAttributes "{566C7D15A071B88E}" {
+      DeploymentPoints {
+       PivotPointInfoItem "{6226F3AB3F51E7CE}" {
+        "Point info" DeploymentPointInfo pi {
+         PivotID "Scene_Root"
+         Offset 0 0.0595 0.3682
+        }
+        StabilizationSize 0.05 0.1 0.3
+       }
+      }
+     }
+     SCR_RecoilCameraShakeParams "{58DEF2AB0413E346}" {
+      m_vTranslationMin 0.002 0.002 0
+      m_vTranslationMax 0.003 0.003 0
+      m_vRotationImpulseMin 0 0 7
+      m_vRotationImpulseMax 0 0 8
+     }
+     PreviewRenderAttributes "{52BAB5E48C906DB8}" {
+      CameraDistanceToItem 1
+      FOV 30
+     }
+     ItemOneHandAnimAttributes "{6226F3AB3F51E7DD}" {
+      ErectLinearOffsetUpper 0 0 0
+      ErectLinearOffset 0.018 -0.2 -0.1
+      ErectLinearOffsetLower 0 -0.05 0
+      CrouchLinearOffsetUpper 0 0 0
+      CrouchLinearOffset 0.018 -0.16 -0.1
+      CrouchLinearOffsetLower 0 -0.15 0
+      SpringCoefficient 2.2
+      DamperCoefficient 2.4
+     }
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{6226F3AB3F51E7A9}" {
+     AttachmentSlot InventoryStorageSlot "{610874056E7424A6}" {
+      PivotID "slot_stock"
+      ChildPivotID "slot_stock"
+      Prefab "{AD045AFAFFC1AB6E}Prefabs/Weapons/Attachments/Stocks/Stock_VZ58/Stock_VZ58_folding.et"
+      InspectionWidgetOffset 0 0.0188 -0.2194
+     }
+     AttachmentType AttachmentStockVz58 "{6226F3AB3F51E7A4}" {
+     }
+    }
+    AttachmentSlotComponent "{6226F3AB3F51E7DA}" {
+     Enabled 0
+     AttachmentSlot InventoryStorageSlot Stock {
+      PivotID "slot_barrel_muzzle"
+      Offset 0 -0.0253 0.031
+      ChildPivotID "snap_weapon"
+      Enabled 0
+      InspectionWidgetOffset 0 0.0486 0.536
+     }
+     AttachmentType AttachmentBayonetVz58 "{6226F3AB3F51E7AD}" {
+     }
+    }
+    SightsComponent "{BB23A637957CFFF8}" {
+     SightsPosition PointInfo "{BB23A63796688E69}" {
+      PivotID "eye"
+      Offset 0 0 0
+     }
+     SightsRanges {
+      SightRangeInfo "{6226F3AB3F51E7A2}" {
+       Range 0.528 440
+       WeaponPosition PointInfo "{6226F3AB3F51E7BC}" {
+        Offset 0 -0.0045 0
+        Angles 0.41 0 0
+       }
+      }
+      SightRangeInfo "{6226F3AB3F51E7BE}" {
+       Range 0.277 100
+       WeaponPosition PointInfo "{6226F3AB3F51E7B8}" {
+        Offset 0 -0.001 0
+        Angles 0.09 0 0
+       }
+      }
+      SightRangeInfo "{6226F3AB3F51E78C}" {
+       Range 0.343 200
+       WeaponPosition PointInfo "{6226F3AB3F51E78F}" {
+        Offset 0 -0.0018 0
+        Angles 0.16 0 0
+       }
+      }
+      SightRangeInfo "{6226F3AB3F51E789}" {
+       Range 0.409 300
+       WeaponPosition PointInfo "{6226F3AB3F51E78B}" {
+        Offset 0 -0.0027 0
+        Angles 0.25 0 0
+       }
+      }
+      SightRangeInfo "{6226F3AB3F51E785}" {
+       Range 0.495 400
+       WeaponPosition PointInfo "{6226F3AB3F51E787}" {
+        Offset 0 -0.0039 0
+        Angles 0.36 0 0
+       }
+      }
+      SightRangeInfo "{6226F3AB3F51E786}" {
+       Range 0.57 500
+       WeaponPosition PointInfo "{6226F3AB3F51E780}" {
+        Offset 0 -0.0054 0
+        Angles 0.5 0 0
+       }
+      }
+      SightRangeInfo "{6226F3AB3F51E782}" {
+       Range 0.66 600
+       WeaponPosition PointInfo "{6226F3AB3F51E79D}" {
+        Offset 0 -0.0072 0
+        Angles 0.66 0 0
+       }
+      }
+      SightRangeInfo "{6226F3AB3F51E79C}" {
+       Range 0.755 700
+       WeaponPosition PointInfo "{6226F3AB3F51E797}" {
+        Offset 0 -0.0093 0
+        Angles 0.86 0 0
+       }
+      }
+      SightRangeInfo "{6226F3AB3F51E791}" {
+       Range 0.877 800
+       WeaponPosition PointInfo "{6226F3AB3F51E793}" {
+        Offset 0 -0.012 0
+        Angles 1.1 0 0
+       }
+      }
+     }
+     SightsPointFront PointInfo "{6226F3AB3F51E76C}" {
+      PivotID "barrel_muzzle"
+      Offset 0 0.0462 -0.0237
+     }
+     SightsPointRear PointInfo "{6226F3AB3F51E76E}" {
+      PivotID "w_sight"
+      Offset 0 0.0094 -0.0344
+     }
+     ADSTime 0.4
+     m_iOpticDOFDistanceScale 50
+    }
+    MuzzleComponent "{CA6BE4D6B867541F}" {
+     components {
+      AttachmentSlotComponent "{6226F3AB3F51E76A}" {
+       AttachmentSlot InventoryStorageSlot Muzzle {
+       }
+       AttachmentType AttachmentMuzzle762_39 "{6226F3AB3F51E767}" {
+       }
+      }
+      CaseEjectingEffectComponent "{5122AAD190FCA21D}" {
+       ParticleEffect "{A89D3276591C9F57}Particles/Weapon/Casing_762x39_PS.ptc"
+       EffectPosition EntitySlotInfo "{5122BA87B56F471A}" {
+        PivotID "barrel_chamber"
+        Offset 0 0.01 -0.01
+        Angles 95 -90 0
+       }
+      }
+      CaseEjectingEffectComponent "{6226F3AB3F51E77F}" {
+       ParticleEffect "{51553DBFB3D561B2}Particles/Weapon/Smoke_VZ58.ptc"
+       EffectPosition EntitySlotInfo "{545EBBB5FB8FA005}" {
+        PivotID "barrel_muzzle"
+       }
+       HasSound 0
+      }
+      SCR_MuzzleEffectComponent "{C9B3271BB22CDB68}" {
+       ParticleEffect "{0E66192FC96CDFB7}Particles/Weapon/Muzzle_VZ58.ptc"
+       EffectPosition EntitySlotInfo "{C9B3271BB85B5D32}" {
+        Offset 0 0 0
+       }
+      }
+     }
+     MuzzleEndPositions {
+      PointInfo "{B80A64F4B6CFB9BF}" {
+       PivotID "barrel_muzzle"
+      }
+     }
+     FireModes {
+      BaseFireMode "{B80A64F4A8EF8333}" {
+       RoundsPerMinute 800
+       UIName "Single"
+      }
+     }
+     MagazineWell MagazineWellVZ58_762 "{6226F3AB3F51E74F}" {
+     }
+     BulletInitSpeedCoef 0.986
+     DispersionDiameter 0.4
+     DispersionRange 220
+     WeaponAimModifiers {
+      SwayWeaponAimModifier "{521AE9A27BDC1E6F}" {
+       "Lower Translation" 0.03 0 0
+       "Lower Rotation" -12 -8 -10
+      }
+      RecoilWeaponAimModifier "{6226F3AB3F51E74B}" {
+       LinearData RecoilData "{6226F3AB3F51E744}" {
+        "Curve X" {
+         0 0.5 0 1 0.203 0.641 0.301 0.518 1 0.5
+        }
+        "Curve Y" {
+         0 0.5 0.032 0.55 0.045 0.75 0.071 0.65 0.095 0.5 0.125 0.5 0.261 0.5 1 0.5
+        }
+        "Curve Z" {
+         0 0.5 0.008 0.809 0.026 0.997 0.032 0.944 0.046 0.948 0.081 0.62 0.177 0.512 0.436 0.5 1 0.5
+        }
+        "Curve Magnitudes" 1 1 1
+        "Curve Mins" -0.001 -0.002 -0.026
+        "Curve Maxs" 0.001 0.003 -0.022
+        "Base Recoil Scale" 3
+       }
+       AngularData RecoilData "{6226F3AB3F51E746}" {
+        "Curve X" {
+         0 0.5 0.019 0.411 0.055 0.539 0.11 0.474 0.216 0.497 1 0.5
+        }
+        "Curve Y" {
+         0 0.5 0.038 0.796 0.093 1 0.222 0.765 0.349 0.571 0.529 0.508 1 0.5
+        }
+        "Curve Z" {
+         0 0.5 0.033 0.641 0.049 0.892 0.095 0.7 0.238 0.487 0.443 0.5 0.7 0.5 1 0.5
+        }
+        "Curve Time Scale" 1.25
+        "Curve Magnitudes" 1 1 1
+        "Curve Mins" -1 1.5 1
+        "Curve Maxs" 1 1.75 1
+       }
+       TurnOffsetData RecoilData "{6226F3AB3F51E740}" {
+        "Curve X" {
+         0 0.5 0.025 0.75 0.06 1 0.094 0.75 0.116 0.539 0.148 0.502 1 0.5
+        }
+        "Curve Y" {
+         0.031 0.998 0.105 0.576 0.236 0.5 1 0.5
+        }
+        "Curve Time Scale" 1
+        "Curve Magnitudes" 1 1 0
+        "Curve Mins" -1.5 5.5 0
+        "Curve Maxs" 1.5 7 0
+        "Base Recoil Scale" 3
+       }
+      }
+      ZeroingWeaponAimModifier "{6226F3AB3F51E75C}" {
+      }
+     }
+     ReloadDuration 2
+     "LEFT HAND TARGET" DeploymentPointInfo lht {
+      PivotID "snap_hand_left"
+      Offset -0.0628 -0.0322 0
+      Angles 90 -90 -35
+     }
+     RIGHT_HAND_TARGET DeploymentPointInfo rht {
+      PivotID "snap_hand_right"
+     }
+     BUTSTOCK_TRANSFORMATION DeploymentPointInfo bt {
+      PivotID "Scene_Root"
+      Offset -0.0031 -0.0106 -0.3249
+     }
+     MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
+      PivotID "magazine"
+      ChildPivotID "snap_weapon"
+      InspectionWidgetOffset 0 -0.0529 0.0981
+     }
+     MagazineTemplate "{A827B610B7CD4158}Prefabs/Weapons/Magazines/Vz58/Magazine_762x39_Vz58_30rnd_Last_5Tracer.et"
+    }
+    WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
+     AnimGraph "{E7E67E4426E24066}Assets/Weapons/Rifles/workspaces/VZ58.agr"
+     AnimInstance "{FFB391312D0E84C5}Assets/Weapons/Rifles/workspaces/VZ58_weapon.asi"
+     AnimInjection AnimationAttachmentInfo "{6226F3AB3F51E753}" {
+      AnimGraph "{E7E67E4426E24066}Assets/Weapons/Rifles/workspaces/VZ58.agr"
+      AnimInstance "{04ED0000B50FE029}Assets/Weapons/Rifles/workspaces/VZ58_player.asi"
+      BindingName "Weapon"
+     }
+     BindWithInjection 1
+    }
+   }
+   SignalsSourceAccess SignalsSourceAccessClass "{CC7B64C6B99546FB}" {
+   }
+   obstructionTestAddedLength 0.29
+   SoundInt 1020100
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "#AR-Weapon_VZ58P_Name"
+    Description "#AR-Weapon_VZ58P_Description"
+    Icon ""
+   }
+  }
+  ActionsManagerComponent "{A29AE67FF4D82B0F}" {
+   ActionContexts {
+    UserActionContext "{5086F9ADF588DCA4}" {
+     Position PointInfo "{5086F9ADE97650DF}" {
+      Offset 0 -0.0113 -0.0867
+     }
+    }
+    UserActionContext "{5956E32BAAADE657}" {
+     Position PointInfo "{5956E329E6B11261}" {
+      Offset 0 0.05 0.4826
+     }
+    }
+    UserActionContext "{5A1E58F7B04F9BE5}" {
+     Position PointInfo "{6226F3AB3F51E721}" {
+      PivotID "slot_magazine"
+      Offset 0 -0.0833 -0.0102
+     }
+    }
+    UserActionContext "{5A1E58F7AED270D4}" {
+     Position PointInfo "{6226F3AB3F51E723}" {
+      PivotID "w_fire_mode"
+      Angles 0 90 0
+     }
+     Radius 0.05
+     Omnidirectional 0
+    }
+    UserActionContext "{6226F3AB3F51E73C}" {
+     UIInfo SCR_ActionContextUIInfo "{6226F3AB3F51E73E}" {
+     }
+     ContextName "bayonet"
+     Position PointInfo "{6226F3AB3F51E739}" {
+      PivotID "slot_barrel_muzzle"
+      Offset 0 -0.0253 0.031
+     }
+     Height 0
+    }
+   }
+  }
+ }
+}

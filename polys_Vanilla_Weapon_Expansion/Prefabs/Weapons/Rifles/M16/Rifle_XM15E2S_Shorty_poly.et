@@ -1,0 +1,55 @@
+GenericEntity : "{4A80A166BEDB75BE}Prefabs/Weapons/Rifles/M16/Rifle_XM15E2S_Shorty.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Materials {
+    MaterialAssignClass "{6226F3A76C9DF129}" {
+     SourceMaterial "M16A2_FrontSight_01"
+     AssignedMaterial "{C0957B41983B2D0C}Assets/Weapons/Rifles/M16A2/Data/M16A2_FrontSight_OliveGreen_Sand_Stripes.emat"
+    }
+    MaterialAssignClass "{6226F3A76C9DF135}" {
+     SourceMaterial "M16A2_Grip_01"
+     AssignedMaterial "{A15C93F5CD3202DC}Assets/Weapons/Rifles/M16A2/Data/M16A2_Grip_01_OliveGreen_Sand_Stripes.emat"
+    }
+    MaterialAssignClass "{6226F3A76C9DF10E}" {
+     SourceMaterial "M16A2_Receiver1_01"
+     AssignedMaterial "{917FE76FAFB530BB}Assets/Weapons/Rifles/M16A2/Data/M16A2_Receiver1_01_OliveGreen_Sand_Stripes.emat"
+    }
+    MaterialAssignClass "{6226F3A76C9DF107}" {
+     SourceMaterial "M16A2_Receiver2_01"
+     AssignedMaterial "{EAC84340502A1694}Assets/Weapons/Rifles/M16A2/Data/M16A2_Receiver2_01_OliveGreen_Sand_Stripes.emat"
+    }
+   }
+  }
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemDisplayName WeaponUIInfo "{5222CB07CFF6712A}" {
+     Name "poly's XM-15 E2S Shorty"
+     Description "A semi-automatic version of the M16A2 carbine for the civilian market. This one looks to have seen extensive use, and undergone several modifications over time."
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{6226F3A8A394CDF0}" {
+     AttachmentSlot InventoryStorageSlot BayonetSlot {
+      Prefab "{D711F819F3271AC6}Prefabs/Weapons/Attachments/Underbarrel/UGL_M203_short_OliveGreen_Sand_Stripes.et"
+     }
+    }
+    AttachmentSlotComponent "{6226F3A8A394CDF5}" {
+     AttachmentSlot InventoryStorageSlot Handguard {
+      Prefab "{519E60CCCDCA456A}Prefabs/Weapons/Attachments/Optics/Optic_AP2k/Collim_AP2k_OliveGreen_Sand_Stripes.et"
+     }
+    }
+    MuzzleComponent "{CA6BE4D6B867541F}" {
+     components {
+      AttachmentSlotComponent "{6226F3A8A3946CBF}" {
+       AttachmentSlot InventoryStorageSlot Muzzle {
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

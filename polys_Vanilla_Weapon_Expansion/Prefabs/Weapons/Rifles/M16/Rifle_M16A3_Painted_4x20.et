@@ -1,0 +1,14 @@
+GenericEntity : "{464F7EE97B481E69}Prefabs/Weapons/Rifles/M16/Rifle_M16A3_Painted.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{5534745C44D1EF58}" {
+     AttachmentSlot InventoryStorageSlot optics {
+      Prefab "{44AAA61117B6CA8E}Prefabs/Weapons/Attachments/Optics/Optic_4x20/Optic_4x20_OliveGreen_Sand_Stripes.et"
+     }
+    }
+   }
+  }
+ }
+}

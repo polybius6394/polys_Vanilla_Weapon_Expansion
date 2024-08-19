@@ -1,0 +1,14 @@
+GenericEntity : "{464F7EE97B481E69}Prefabs/Weapons/Rifles/M16/Rifle_M16A3_Painted.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{56DE9C900611C1AF}" {
+     AttachmentSlot InventoryStorageSlot Handguard {
+      Prefab "{775E9992AF575338}Prefabs/Weapons/Attachments/Underbarrel/UGL_M203_long_OliveGreen_Sand_Stripes.et"
+     }
+    }
+   }
+  }
+ }
+}
