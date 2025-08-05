@@ -291,7 +291,7 @@ GenericEntity : "{911D6C8DC7BA2D63}Prefabs/Weapons/Core/Rifle_Base.et" {
      MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
       InspectionWidgetOffset 0 -0.0431 0.0743
      }
-     MagazineTemplate "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Last_5Tracer.et"
+     MagazineTemplate "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_M855_M856_Last_5Tracer.et"
     }
     WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
      AnimGraph "{C10E1E127E210526}Assets/Weapons/Rifles/workspaces/m16.agr"
@@ -309,8 +309,8 @@ GenericEntity : "{911D6C8DC7BA2D63}Prefabs/Weapons/Core/Rifle_Base.et" {
    obstructionTestBBScale 0.08 0.08 0.08
    SoundInt 1020200
    UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
-    Name "#AR-Weapon_M16A2_Name"
-    Description "#AR-Weapon_M16A2_Description"
+    Name "XM-15 E2S Shorty"
+    Description "A semi-automatic version of the M16A2 carbine for the civilian market."
     Icon ""
    }
    WeaponOffset 0 0 0

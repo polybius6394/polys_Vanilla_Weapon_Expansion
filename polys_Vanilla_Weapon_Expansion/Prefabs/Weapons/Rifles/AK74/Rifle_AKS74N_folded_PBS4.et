@@ -1,0 +1,18 @@
+GenericEntity : "{20B01D639AA0364B}Prefabs/Weapons/Rifles/AK74/Rifle_AKS74N_folded.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    MuzzleComponent "{CA6BE4D6B867541F}" {
+     components {
+      AttachmentSlotComponent "{4E2B66CBA589F625}" {
+       AttachmentSlot InventoryStorageSlot Muzzle {
+        Prefab "{3B96FAC169E27037}Prefabs/Weapons/Attachments/Muzzle/Suppressor_PBS4/Suppressor_PBS4.et"
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

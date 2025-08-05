@@ -309,8 +309,8 @@ GenericEntity : "{911D6C8DC7BA2D63}Prefabs/Weapons/Core/Rifle_Base.et" {
    obstructionTestAddedLength 0.29
    SoundInt 1020100
    UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
-    Name "#AR-Weapon_VZ58P_Name"
-    Description "#AR-Weapon_VZ58P_Description"
+    Name "EVR-76 Sporter"
+    Description "A semi-automatic version of the Sa vz. 58 for civilian use."
     Icon ""
    }
   }

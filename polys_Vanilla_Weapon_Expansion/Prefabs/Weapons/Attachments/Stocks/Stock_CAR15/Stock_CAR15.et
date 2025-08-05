@@ -1,0 +1,34 @@
+GenericEntity : "{AD045AFAFFC1AB6E}Prefabs/Weapons/Attachments/Stocks/Stock_VZ58/Stock_VZ58_folding.et" {
+ ID "557E85EEE1B603F1"
+ components {
+  MeshObject "{557E85EE39CED921}" {
+   Object "{165893BB94D40116}Assets/Weapons/Rifles/M16A2/M16A2_carbine_body.xob"
+   Materials {
+    MaterialAssignClass "{660948C435DC8445}" {
+     SourceMaterial "M16A2_FrontSight_01"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+    MaterialAssignClass "{660948C435DC8473}" {
+     SourceMaterial "M16A2_Grip_01"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+    MaterialAssignClass "{660948C435DC847D}" {
+     SourceMaterial "M16A2_Receiver1_01"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+    MaterialAssignClass "{660948C435DC847A}" {
+     SourceMaterial "M16A2_Receiver2_01"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+    MaterialAssignClass "{660948C435DC8466}" {
+     SourceMaterial "M16A2_carbine_Barrel_01"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+    MaterialAssignClass "{660948C435DC8460}" {
+     SourceMaterial "M16A2_carbine_Receiver_Decals_01"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+   }
+  }
+ }
+}

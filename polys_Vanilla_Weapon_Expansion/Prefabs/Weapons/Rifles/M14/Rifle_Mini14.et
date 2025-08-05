@@ -1,0 +1,39 @@
+GenericEntity : "{3E54E1D4EE1CFB2C}Prefabs/Weapons/Rifles/M14/Rifle_M1A.et" {
+ ID "5254ACCA959048B9"
+ components {
+  WeaponSoundComponent "{5A8685198A9AEEDD}" {
+   Filenames {
+    "{A84D9F22F2C0D9CE}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_Rifle_WoodMetal.acp" "{68E023371FDD3B12}Sounds/Weapons/_SharedData/Drop/Weapons_Drop_Rifle_WoodMetal.acp" "{DB92C647E05B2512}Sounds/Weapons/Rifles/M16A2/Weapons_Rifles_M16A2_Shot.acp" "{F6F479AE77E7A573}Sounds/Weapons/Rifles/M21/Weapons_Rifles_M21_Handling.acp" "{332983CC95EE1E1E}Sounds/Weapons/_SharedData/Melee/Weapons_Melee_Rifle.acp" "{D8F675F3468362E2}Sounds/Weapons/_SharedData/Weapons_Sights_Actions.acp" "{10C1421961C34D26}Sounds/Weapons/_SharedData/Weapons_Deployment.acp"
+   }
+  }
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemDisplayName WeaponUIInfo "{5222CB07CFF6712A}" {
+     Name "Ruger Mini-14"
+     Description "The Ruger Mini-14 is a lightweight semi-automatic rifle, chambered in 5.56x45mm NATO, and primarily produced for the civilian market."
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    MuzzleComponent "{CA6BE4D6B867541F}" {
+     components {
+      CaseEjectingEffectComponent "{5122AAD190FCA21D}" {
+       ParticleEffect "{4BF43F7D0D462D39}Particles/Weapon/Casing_556x45.ptc"
+      }
+     }
+     MagazineWell MagazineWellStanag556 "{52D8E2D6B49EF12E}" {
+     }
+     MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
+      Offset 0 -0.0191 -0.02
+     }
+     MagazineTemplate "{FB5EB0F6D447E858}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_M193_Ball.et"
+    }
+   }
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "Ruger Mini-14"
+    Description "The Ruger Mini-14 is a lightweight semi-automatic rifle, chambered in 5.56x45mm NATO, and primarily produced for the civilian market."
+   }
+  }
+ }
+}

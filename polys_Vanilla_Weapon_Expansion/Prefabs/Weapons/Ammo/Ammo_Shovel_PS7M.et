@@ -1,0 +1,130 @@
+Projectile : "{C0BDA86B5AA5648C}Prefabs/Weapons/Core/Ammo_Rocket_Base.et" {
+ ID "DA5C6308000CDEF2"
+ components {
+  SCR_ShellSoundComponent "{60C2960B45ABE97D}" {
+   Filenames {
+    "{3678E10B392E86FE}Sounds/Weapons/_SharedData/ProjectileTravelling/Weapons_ProjectileTravelling_UGL_Generic.acp"
+   }
+  }
+  AICombatPropertiesComponent "{59C92CB0FD688D78}" {
+   Enabled 0
+   Priority 5
+   UsedAgainst 1
+  }
+  CollisionTriggerComponent "{622813D043612DD9}" {
+   PROJECTILE_EFFECTS {
+    SpawnParticleEffect "{622813D043612DA1}" {
+     ParticleEffect "{2647741E60BE9355}Particles/Enviroment/Hit_dirt_enter_01.ptc"
+    }
+    HitSoundEffect "{622813D5E0AA0FEF}" {
+     Filename "{ADFA2EE0A8127F18}Sounds/Weapons/Grenades/_SharedData/Weapons_Grenade_Impacts_Generic.acp"
+    }
+   }
+  }
+  InventoryItemComponent "{526E87778842822F}" {
+   Attributes SCR_ItemAttributeCollection "{526E87778ACB229F}" {
+    ItemDisplayName UIInfo "{526E8777859BAACF}" {
+     Name "MPL-50 Emtrenching Tool"
+     Description "You found this entrenching tool in the back of a truck. It's dull, and, being bored, you figured out that you can fit it in your rocket launcher."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{622813D043612D99}" {
+     Weight 0.8
+     SizeSetupStrategy Manual
+     ItemDimensions 10 10 10
+     ItemVolume 100
+     DimensionScaler 1
+     RestingAdditiveRotationLS 0 0 0
+     RestingAdditiveOffsetLS 0 0 0
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{622813D043612D92}" {
+      CameraPreset Top
+      CameraDistanceToItem 2.3
+      ItemRenderRotation 0 270 0
+      FOV 10
+     }
+    }
+    m_SlotType SLOT_BACKPACK
+   }
+  }
+  MagazineComponent "{50F6614BB5D5B0A8}" {
+   MagazineWell MagazineWellRPG7 "{622813D043612D62}" {
+   }
+   UIInfo MagazineUIInfo "{560AE4EBFA0176D4}" {
+    Name "MPL-50 Entrenching Tool"
+    Description "The main purpose of MPL-50 is entrenching, which is carried out at a rate of 0.1–0.5 m3/hour depending on the soil type and physical condition of the soldier."
+    m_sAmmoCaliber "150mm"
+    m_sAmmoType "Shovel"
+    m_eAmmoTypeFlags SNIPER
+   }
+   ItemModel "{1875570185471308}Assets/Items/Equipment/Accessories/ETool_MPL50/ETool_MPL50.xob"
+  }
+  MeshObject "{851AA4A2AE0A56BF}" {
+   Object "{1875570185471308}Assets/Items/Equipment/Accessories/ETool_MPL50/ETool_MPL50.xob"
+  }
+  MissileMoveComponent "{0EF36690881261EF}" {
+   InitSpeed 15
+   InitSpeedVariation 0.25
+   Mass 0.8
+   TimeToLive 180
+   DeleteWhenStop 0
+   TriggerWhenStop 0
+   TriggerWhenTimeout 0
+   CollisionEnabled 1
+   ProjectileEffects {
+    ProjectileDamage "{56829D01651CE9A7}" {
+     Enabled 0
+     DamageValue 675
+     DamageEffects {
+      SCR_BaseBulletDamageEffect "{611E7405A19DBF5F}" {
+      }
+     }
+    }
+    HitSoundEffect "{5ADCBBC4B2F96245}" {
+     Filename "{E252C97A41BE786C}Sounds/Weapons/_SharedData/BulletHits/Weapons_BulletHits.acp"
+    }
+    AIHitEffect "{622813D3E413A671}" {
+    }
+    ExplosionEffect "{622813D3943B400D}" {
+     Enabled 0
+     EffectPrefab "{9B5FF7EECAD376FA}Prefabs/Weapons/Warheads/Warhead_Base.et"
+     ExitEffectPrefab "{4E168888868FE6C7}Prefabs/Weapons/Core/ExitEffect.et"
+    }
+    SpawnParticleEffect "{622813D589162423}" {
+     ParticleEffect "{2647741E60BE9355}Particles/Enviroment/Hit_dirt_enter_01.ptc"
+    }
+   }
+   BallisticTableConfig "{04AC3D52618E810C}Configs/Weapons/AIBallisticTables/AIBT_Rocket_PG7VM.conf"
+   MaxControlRange 0
+   Maneuvrability 0
+   TrackOversteer 0
+   TrackLead 0
+   ThrustInitTime 0.1
+   ThrustTime 0.2
+   ThrustForce 15
+   ForwardAirFriction 0.36
+   SideAirFriction 0.08
+   AlignTorque 0.04
+   DistanceEnableGravitation 0.4
+  }
+  RigidBody "{529E88841E9EDFB4}" {
+   Mass 2.6
+  }
+  RocketTraceEffectComponent "{622813D0436119B2}" {
+   Enabled 0
+   ParticleEffect "{0F364F4CD1D72350}Particles/Weapon/Trail_PG7VL.ptc"
+  }
+  SCR_SoundDataComponent "{60C8E827AC6A605E}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{60C8E827AD2D6EAA}" {
+    }
+    SCR_AudioSourceConfiguration "{60C8E82652253BD2}" {
+    }
+    SCR_AudioSourceConfiguration "{60C8E826440115FF}" {
+    }
+   }
+  }
+ }
+ ProjectileModel "{1875570185471308}Assets/Items/Equipment/Accessories/ETool_MPL50/ETool_MPL50.xob"
+ CartridgeModel "{1875570185471308}Assets/Items/Equipment/Accessories/ETool_MPL50/ETool_MPL50.xob"
+}

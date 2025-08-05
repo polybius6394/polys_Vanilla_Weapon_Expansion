@@ -32,6 +32,10 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
      DispersionRange 100
     }
    }
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "M14"
+    Description "The M14 rifle, officially the United States Rifle, Caliber 7.62 mm, M14, is an American battle rifle chambered for the 7.62×51mm NATO cartridge. It became the standard-issue rifle for the U.S. military in 1957, replacing the M1 Garand rifle in service with the U.S. Army by 1958 and the U.S. Marine Corps by 1965; deliveries of service rifles to the U.S. Army began in 1959."
+   }
   }
  }
 }

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{7C67E3688319FA9A}Prefabs/Weapons/Attachments/Stocks/Stock_VZ58/Stock_AKS74_folding.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

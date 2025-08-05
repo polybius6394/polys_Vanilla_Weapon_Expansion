@@ -1,0 +1,40 @@
+GenericEntity : "{FA5C25BF66A53DCF}Prefabs/Weapons/Rifles/AK74/Rifle_AK74.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Materials {
+    MaterialAssignClass "{660948FC3BDD6618}" {
+     SourceMaterial "AK74_Stock"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+   }
+  }
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemDisplayName WeaponUIInfo "{5222CB07CFF6712A}" {
+     Name "AKS-74"
+     Description "An AK-74 with a folding stock, built for use by Soviet paratroopers."
+    }
+   }
+  }
+  SlotManagerComponent "{660948FC76B82BE4}" {
+   Slots {
+    EntitySlotInfo Stock {
+     Prefab "{7C67E3688319FA9A}Prefabs/Weapons/Attachments/Stocks/Stock_AKS74/Stock_AKS74_folding.et"
+    }
+    EntitySlotInfo FoldedStock {
+     Offset -0.0318 0 -0.166
+     Angles 0 -180 0
+     Enabled 0
+     Prefab "{7C67E3688319FA9A}Prefabs/Weapons/Attachments/Stocks/Stock_AKS74/Stock_AKS74_folding.et"
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "AKS-74"
+    Description "An AK-74 with a folding stock, built for use by Soviet paratroopers."
+   }
+  }
+ }
+}

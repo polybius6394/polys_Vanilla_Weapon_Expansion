@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{7ECA19DE2D267908}Prefabs/Weapons/Attachments/Stocks/Stock_AKS74/Stock_CAR15.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

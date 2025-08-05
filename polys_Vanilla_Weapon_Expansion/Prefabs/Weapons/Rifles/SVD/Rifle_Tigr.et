@@ -16,6 +16,10 @@ GenericEntity : "{3EB02CDAD5F23C82}Prefabs/Weapons/Rifles/SVD/Rifle_SVD.et" {
      DispersionRange 100
     }
    }
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "Tigr"
+    Description " A civilian variant of the SVD first produced in the 1970s."
+   }
   }
  }
 }

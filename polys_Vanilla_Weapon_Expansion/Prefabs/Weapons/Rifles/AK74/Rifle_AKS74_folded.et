@@ -1,0 +1,15 @@
+GenericEntity : "{AFD8BBF0AE1A672A}Prefabs/Weapons/Rifles/AK74/Rifle_AKS74.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  SlotManagerComponent "{660948FC76B82BE4}" {
+   Slots {
+    EntitySlotInfo Stock {
+     Enabled 0
+    }
+    EntitySlotInfo FoldedStock {
+     Enabled 1
+    }
+   }
+  }
+ }
+}

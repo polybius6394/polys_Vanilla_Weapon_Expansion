@@ -36,6 +36,10 @@ GenericEntity : "{3EB02CDAD5F23C82}Prefabs/Weapons/Rifles/SVD/Rifle_SVD.et" {
      MagazineTemplate "{627255315038152A}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_SpecialBall.et"
     }
    }
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "Tigr .308"
+    Description " A civilian variant of the SVD first produced in the 1970s. This one is chambered in 7.62x51 NATO."
+   }
   }
  }
 }

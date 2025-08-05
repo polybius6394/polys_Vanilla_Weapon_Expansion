@@ -28,6 +28,10 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
      DispersionRange 100
     }
    }
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "Springfield M1A"
+    Description "The Springfield Armory M1A is a semi-automatic rifle made by Springfield Armory, Inc., beginning in 1971, based on the M14 rifle, for the civilian and law enforcement markets in the United States."
+   }
   }
  }
 }

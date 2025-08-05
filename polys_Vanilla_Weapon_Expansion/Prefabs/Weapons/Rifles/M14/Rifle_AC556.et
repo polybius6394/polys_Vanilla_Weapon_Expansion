@@ -1,0 +1,32 @@
+GenericEntity : "{6FF4B686A6743F61}Prefabs/Weapons/Rifles/M14/Rifle_Mini14.et" {
+ ID "5254ACCA959048B9"
+ components {
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemDisplayName WeaponUIInfo "{5222CB07CFF6712A}" {
+     Name "Ruger AC-556"
+     Description "The Ruger AC-556 is a select-fire version of the Mini-14, chambered in 5.56x45mm NATO."
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    MuzzleComponent "{CA6BE4D6B867541F}" {
+     FireModes {
+      BaseFireMode "{B80A64F4A8EF8333}" {
+      }
+      BaseFireMode "{660948C82384ACD2}" {
+       MaxBurst -1
+       RoundsPerMinute 750
+       UIName "Auto"
+      }
+     }
+    }
+   }
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "Ruger AC-556"
+    Description "The Ruger AC-556 is a select-fire version of the Mini-14, chambered in 5.56x45mm NATO."
+   }
+  }
+ }
+}
