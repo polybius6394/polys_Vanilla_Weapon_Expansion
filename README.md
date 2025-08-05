@@ -15,6 +15,10 @@ Currently included is;
 - Tigr .308, just a Tigr in 7.62x51mm NATO.
 - AP-67, a select-fire prototype rifle derived from the Sa vz. 58, chambered in 7.62x51mm NATO.
 - EVR-76 Sporter, a semi-automatic Sa vz. 58V for the civilian market. Based off the CZH-2003 but as you can tell from the name, it wasn't invented yet, so I made a name up.
+- Ruger Mini-14, a semi-automatic M14 lookalike chambered in 5.56x45mm NATO. Though not an accurate model, I rechambered the vanilla M21 SWS to add this one in.
+- Ruger AC-556, a select-fire version of the Mini-14.
+- AKS-74, the paratrooper variant of the AK-74 with a folding stock.
+- AKS-74N, the paratrooper variant of the AK-74N with a folding stock.
 
 The 'civilian' weapons were added to the FIA arsenal, and the rest were put into their respective countries' arsenals.
 
